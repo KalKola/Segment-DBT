@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'profiles_sync'
+name: 'shopoholics'
 version: '1.0.0'
 config-version: 2
 require-dbt-version: '>=1.2.0' # several macros we need were included at this point
@@ -11,7 +11,7 @@ require-dbt-version: '>=1.2.0' # several macros we need were included at this po
 profile: 'profiles_sync'
 
 vars:
-  schema_name: personas_main_2
+  schema_name: profile_sync_dev_space
   etl_overlap: 28 # should be set to an interval (in hours) that's a bit larger than your materialization cadence
 
 # These configurations specify where dbt should look for different types of files.
